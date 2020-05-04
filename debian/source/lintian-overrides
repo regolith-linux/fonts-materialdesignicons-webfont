@@ -1,0 +1,6 @@
+# These are false positives, they are just long lines in HTML code and there is
+# no indication that there is any other prefered form of modification.
+source-is-missing preview.html *
+# These is false positive, debian/copyright
+# has no tab included.
+tab-in-license-text debian/copyright *

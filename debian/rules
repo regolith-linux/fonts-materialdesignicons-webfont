@@ -1,0 +1,29 @@
+#!/usr/bin/make -f
+
+UPSTREAM_GIT := https://github.com/Templarian/MaterialDesign-Webfont.git
+-include /usr/share/openstack-pkg-tools/pkgos.make
+
+%:
+	dh $@
+
+override_dh_install:
+	dh_install
+
+	# Make a symlink of all fonts in /usr/share/fonts-materialdesignicons-webfont/fonts
+	# and fix the x flag
+	mkdir -p debian/fonts-materialdesignicons-webfont/usr/share/fonts-materialdesignicons-webfont/fonts
+	for i in truetype eot svg woff ; do \
+		for j in `find debian/fonts-materialdesignicons-webfont/usr/share/fonts/$$i/materialdesignicons-webfont -type f` ; do \
+			FNTFILE=`basename $$j` ; \
+			ln -s ../../fonts/$$i/materialdesignicons-webfont/$$FNTFILE debian/fonts-materialdesignicons-webfont/usr/share/fonts-materialdesignicons-webfont/fonts/$$FNTFILE ; \
+			echo $$j ; \
+		done ; \
+	done
+
+	# Remove unicode "BOM" character as
+	# it is causing scss compiler to fail.
+	# Reference:
+	# - https://www.compart.com/en/unicode/U+FEFF
+	# - https://www.freecodecamp.org/news/a-quick-tale-about-feff-the-invisible-character-cd25cd4630e7/
+	# - https://unix.stackexchange.com/questions/381230/how-can-i-remove-the-bom-from-a-utf-8-file
+	sed -i -e '1s/^\xEF\xBB\xBF//' $(CURDIR)/debian/fonts-materialdesignicons-webfont/usr/share/fonts-materialdesignicons-webfont/scss/_functions.scss

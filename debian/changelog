@@ -1,0 +1,72 @@
+fonts-materialdesignicons-webfont (1.6.50-3) unstable; urgency=medium
+
+  * Uploading to unstable:
+    - upgrades the package to latest version (Closes: #903753).
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 04 May 2020 17:34:23 +0200
+
+fonts-materialdesignicons-webfont (1.6.50-2) experimental; urgency=medium
+
+  * Remove unicode "BOM" from _functions.scss,
+    as it caused scss compiler to fail.
+
+ -- Michal Arbet <michal.arbet@ultimum.io>  Wed, 29 Apr 2020 18:29:25 +0200
+
+fonts-materialdesignicons-webfont (1.6.50-1) experimental; urgency=medium
+
+  [ Daniel Baumann ]
+  * Updating vcs fields.
+  * Updating copyright format url.
+  * Updating maintainer field.
+  * Running wrap-and-sort -bast.
+  * Updating standards version to 4.0.0.
+  * Removing gbp.conf, not used anymore or should be specified in the
+    developers dotfiles.
+  * Updating standards version to 4.0.1.
+  * Deprecating priority extra as per policy 4.0.1.
+  * Updating standards version to 4.1.0.
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/control: Use team+openstack@tracker.debian.org as maintainer
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Michal Arbet ]
+  * New upstream version
+  * d/control:
+    - Add me to uploaders field
+    - Bump debhelper-compat to 11
+    - Bump Standards-version to 4.5.0
+  * d/copyright: Add me
+  * Add some lintian overrides
+
+ -- Michal Arbet <michal.arbet@ultimum.io>  Sat, 25 Apr 2020 15:21:51 +0200
+
+fonts-materialdesignicons-webfont (1.4.57-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed VCS URLs (https).
+  * d/rules: Changed UPSTREAM_GIT protocol to https
+  * d/copyright: Changed source URL to https protocol
+
+  [ Ivan Udovichenko ]
+  * Package new version.
+
+  [ Thomas Goirand ]
+  * Added Ivan as uploaders:.
+  * Standards-Version is now 3.9.8 (no change).
+  * Fixed debian/copyright ordering.
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 14 Jun 2016 09:20:46 +0000
+
+fonts-materialdesignicons-webfont (1.1.70-2) unstable; urgency=medium
+
+  * Also packaging the scss folder (it was missing).
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 22 Sep 2015 09:25:33 +0000
+
+fonts-materialdesignicons-webfont (1.1.70-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #798299)
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 07 Sep 2015 15:23:46 +0200
