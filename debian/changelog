@@ -1,3 +1,9 @@
+fonts-materialdesignicons-webfont (1.6.50-3regolith1) buster; urgency=medium
+
+  * Import from Debian for use in buster 
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sun, 14 Feb 2021 19:05:28 -0800
+
 fonts-materialdesignicons-webfont (1.6.50-3) unstable; urgency=medium
 
   * Uploading to unstable:
