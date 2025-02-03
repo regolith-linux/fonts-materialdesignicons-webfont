@@ -1,3 +1,15 @@
+fonts-materialdesignicons-webfont (1.6.50-4regolith1) buster; urgency=medium
+
+  [ Khosrow Moossavi ]
+  * feat: enable github action to test pull requests
+  * feat: enable github action to publish to unstable
+  * feat: enable github action to publish to testing
+  * feat: enable github action to prepare release
+  * chore: use regolith-ci-bot user and token
+  * fix: create release tag from correct git sha
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Mon, 03 Feb 2025 20:50:37 +0000
+
 fonts-materialdesignicons-webfont (1.6.50-3regolith1) buster; urgency=medium
 
   * Import from Debian for use in buster 
