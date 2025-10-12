@@ -1,3 +1,10 @@
+fonts-materialdesignicons-webfont (1.6.50-5regolith1) buster; urgency=medium
+
+  [ Khosrow Moossavi ]
+  * feat: use build-only to test pull request
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sun, 12 Oct 2025 15:12:43 +0000
+
 fonts-materialdesignicons-webfont (1.6.50-4regolith1) buster; urgency=medium
 
   [ Khosrow Moossavi ]
